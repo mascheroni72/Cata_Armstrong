@@ -12,9 +12,9 @@ function checkNumberArmstrong($numCheck) : bool {
     $x = $numCheck;
 
     while($x > 0) { 
-        $digit = $x % 10; //obtención último digito a través del módulo.
-        $sum += $digit*$digit*$digit;//suma de los cubos de los dígitos que se acumulan en la variable
-        $x = $x/10; //al dividir por 10 elimina el último dígito y se queda con entero más bajo.
+        $digit = $x % 10;
+        $sum += $digit*$digit*$digit;
+        $x = $x/10; 
     }
     if ($numCheck == $sum) {
         return true;
